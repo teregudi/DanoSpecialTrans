@@ -1,3 +1,15 @@
-h2 {
-    color: brown;
+.header-image {
+    background-color: teal;
+}
+
+.row {
+    display: flex;
+}
+
+.row .container {
+    width: 33%;
+}
+
+.row .container img {
+    width: 100%;
 }
