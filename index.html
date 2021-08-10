@@ -2,10 +2,9 @@
 <html lang="hu">
     <head>
         <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="src/style.css">
-        <script src="src/app.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
         <title>Dano Special Trans</title>
     </head>
 
@@ -30,38 +29,48 @@
                 </ul>
             </div>
             
-            <div class="row">
-                <div class="container">
-                    <img src="src/images/cargo1.jpeg" alt="cargo"/>
+            <section class="gallery min-vh-100">
+                <div class="container-lg">
+                    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col">
+                            <img src="src/images/cargo1.jpeg" class="gallery-item" alt="cargo"/>
+                        </div>
+                        <div class="col">
+                            <img src="src/images/cargo2.jpg" class="gallery-item" alt="cargo"/>
+                        </div>
+                        <div class="col">
+                            <img src="src/images/cargo3.jpg" class="gallery-item" alt="cargo"/>
+                        </div>
+                        <div class="col">
+                            <img src="src/images/cargo4.jpg" class="gallery-item" alt="cargo"/>
+                        </div>
+                        <div class="col">
+                            <img src="src/images/cargo5.jpeg" class="gallery-item" alt="cargo"/>
+                        </div>
+                        <div class="col">
+                            <img src="src/images/cargo6.jpeg" class="gallery-item" alt="cargo"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="container">
-                    <img src="src/images/cargo2.jpg" alt="cargo"/>
+            </section>
+            
+            <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/images/cargo1.jpeg" class="modal-img" alt="modal img" />
+                    </div>
                 </div>
-                <div class="container">
-                    <img src="src/images/cargo3.jpg" alt="cargo"/>
                 </div>
             </div>
-            <div class="row">
-                <div class="container">
-                    <img src="src/images/cargo4.jpg" alt="cargo"/>
-                </div>
-                <div class="container">
-                    <img src="src/images/cargo5.jpeg" alt="cargo"/>
-                </div>
-                <div class="container">
-                    <img src="src/images/cargo6.jpeg" alt="cargo"/>
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4">Első oszlop</div>
-                <div class="col-sm-12 col-md-6 col-lg-4">Első oszlop</div>
-                <div class="col-sm-12 col-md-6 col-lg-4">Első oszlop</div>
-            </div>
+  
         </div>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>    
+        <script src="src/bootstrap.bundle.min.js"></script>
+        <script src="src/app.js"></script>
     </body>
 </html>
